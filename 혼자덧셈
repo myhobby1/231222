@@ -1,0 +1,20 @@
+ function solution(denum1,num1,denum2,num2){
+    var answet=[];
+    const denum=denum1*num2+num1*denum2;
+    const num=num1*num2
+
+   let minNumber;
+   if(denum<num){
+      minNumber=denum
+   }else{
+    minNumber=num
+   }
+   while(true){
+    if(denum % minNumber===0){
+      if(denum % minNumber===0){
+       return answer(denum/num,denum/num);
+     }
+    }
+    minNumber=minNumber-1;
+    }
+   }
